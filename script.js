@@ -1,3 +1,4 @@
+document.getElementById('some-id').addEventListener('click', checkGuess)
 let randomNum
 const output = document.getElementById('output-log')
 
@@ -9,9 +10,9 @@ function createRandom () {
 }
 
 function checkGuess () {
-  const userNum = document.getElementById('user-guess').value
-
-  if (userNum == randomNum) {
+  const userNum = parseInt(document.getElementById('user-guess').value)
+  
+  if (userNum === randomNum) {
     console.log('Congrats you guessed correctly')
     output.innerHTML = 'Congrats you guessed correctly'
     output.style.color = 'green'
