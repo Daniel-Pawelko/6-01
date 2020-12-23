@@ -1,5 +1,5 @@
 let randomNum
-const output = document.getElementById('outputLog')
+const output = document.getElementById('output-log')
 
 createRandom()
 
@@ -9,7 +9,7 @@ function createRandom () {
 }
 
 function checkGuess () {
-  const userNum = document.getElementById('userGuess').value
+  const userNum = document.getElementById('user-guess').value
 
   if (userNum == randomNum) {
     console.log('Congrats you guessed correctly')
